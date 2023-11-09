@@ -1,3 +1,3 @@
 #!/usr/bin/env python3
-
-print("Hallo Welt")
+for i in range(2, 11, 2):
+    print(i) # 2, 4, 6, 8, 10 

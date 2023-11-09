@@ -61,3 +61,44 @@ if x == 1:
 else:
     var = 30
 ```
+
+## Loops
+
+### while
+
+```python
+# while:
+x = 0
+while x < 10:
+    print(x)
+```
+
+Use `break` to cancel whole loop, use `continue` to cancel current cycle and continue with next cycle.
+
+### for
+
+```python
+for i in [1, 2, 3]:
+    print(i)    #outpu: 1, 2, 3
+
+# cool with range(start, stop, step)
+
+for i in range(3):
+    print(i)    # output: 0, 1, 2
+
+for i in range(2, 11, 2):
+    print(i)    # output: 2, 4, 6, 8, 10 
+```
+
+## pass
+
+Use to replace code block not implemeted yet:
+
+```python
+if x == 1:
+    pass
+else:
+    print("x too big!")
+```
+
+
