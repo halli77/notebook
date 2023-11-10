@@ -1,19 +1,119 @@
 # Python
 
+## www
+
+* [https://www.w3schools.com/python/](https://www.w3schools.com/python/)
+* [https://docs.python.org/](https://docs.python.org/)
+
 ## Data Types
 
+### None
+
 ```python
-# integer:
-i = 1
-# float:
-j = 1.05
-# string:
-k = "Hello World!"
-# list:
-l = ["A", "B", "C"]
-# dictionary:
-m = {"key1" : "value1", "key2" : "value2"}
+nothing = None
+if Nothhing is None:
+    print(nothing)  # output: None
 ```
+
+### Numeric Datatypes
+
+#### int
+
+* no limitation in size of number
+
+```python
+vdez = 1234
+vokt = 0o2471
+vhex = 0x5A3F
+vbin = 0b1101
+
+```
+**bit operations:**
+
+| operator  | operation |
+| --------- | ---------------- |
+| x & y     | AND |
+| x \| y    | OR |
+| x ^ y     | XOR |
+| x << n    | shift n bits to left |
+| x >> n    | shift n bits to right |
+
+
+#### float
+
+```python
+a = 3.141
+b = 3.141e-12  # -> 3.141 * 10^-12
+print(3.0e999) # -> inf     (infinity)
+```
+
+#### bool
+
+```python
+v1 = True
+v2 = False
+```
+
+**Operators:**
+* not x
+* x and y
+* x or y
+
+**Compare with not:**
+
+| type      | False-value |
+| --------- | ----------- |
+| int       | 0           |
+| float     | 0.0         |
+| complex   | 0 + 0j      |
+| str       | ""          |
+| list      | []          |
+| tuple     | ()          |
+| dict      | {}          |
+| set       | set()       |
+| frozenset | frozenset() |
+
+```python
+
+if not "":
+    print("empty string")
+```
+
+#### complex
+
+```python
+c = 2 + 4j
+
+# c.real -> 2.0
+# c.imag -> 4.0
+```
+
+#### Special Arithmetic Operators
+
+```python
+# residual part of division
+print (8 % 3) # -> 2
+
+# power
+print (3 ** 3) # -> 27
+
+# rounded quotien
+print (10 // 3) # -> 3
+```
+
+**Augmented Assignments:**
+* x += y -> x = x + y
+* x -= y -> x = x - y
+* x *= y -> x = x * y
+* x /= y -> x = x / y
+
+**Converting functions:**
+
+* int()
+* float()
+* bool()
+* complex()
+
 
 ## Shebang
 
