@@ -207,6 +207,55 @@ one, *middle, six = tu
 print(one, middle, six) #-> 1 [2, 3, 4, 5] 6
 ```
 
+
+#### str, bytes, bytearray
+
+```python
+s = "Hello world"
+t = ("Hello world, "
+     "how is it going?")
+print(t) # -> Hello world, how is it going?
+
+b = b"i am bytes"
+print(b) # -> b'i am bytes'
+
+barray = bytearray(b'i am bytearray')
+print(barray) # -> bytearray(b'i am bytearray')
+```
+
+##### Splitting Strings
+
+| Method                    | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| s.split([sep, maxsplit])  | Splitting s at sep                                                             |
+| s.rsplit([sep, maxsplit]) | Splitting s at sep, but reverse                                                |
+| s.splitlines([keepends])  | Splitting s at crlf                                                            |
+| s.partition(sep)          | Splitting s at first occurance of sep, returns 3-tuple (split, sep, remainder) |
+| s.rpartition(sep)         | see above                                                                      |
+
+##### Search Strings
+
+| Method                      | Description                                           |
+| --------------------------- | ----------------------------------------------------- |
+| s.find(sub, [start, end])   | search for sub in s and returns index                 |
+| s.rfind(sub, [start, end])  | reverse find()                                        |
+| s.index(sub, [start, end])  | like s.find, but throws exception if sub is not found |
+| s.rindex(sub, [start, end]) | reverse rindex()                                      |
+
+##### Replace Strings
+
+| Method                       | Description                                                                       |
+| ---------------------------- | --------------------------------------------------------------------------------- |
+| s.replace(old, new, [count]) | replaces all occurances of old with new, optionally limited to count replacements |
+| s.lower()                    | converts string to lower case                                                     |
+| s.upper()                    | converts string to upper case                                                     |
+| s.swapcase()                 | inverts upper and lower case                                                      |
+| s.capitalize()               | first char upper case, remaining chars lowercase                                  |
+| s.casefold()                 | like lower(), but additionally replaces special characters                        |
+| s.title()                    | first char of every word to upper case, remaining chars to lower case             |
+| s.expandtabs([tabsize])      | replaces tabs by tabsize numbers of blanks                                        | 
+
+
 ## Shebang
 
 * #!/usr/bin/env python3
