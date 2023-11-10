@@ -165,7 +165,7 @@ print(b.index("l")) # -> 3
 print("hello world".count("l")) # -> 3
 ```
 
-### list
+#### list
 
 * is mutable
 * elements can be of different datatypes
@@ -187,7 +187,7 @@ print("hello world".count("l")) # -> 3
 | s.reverse()            | reverses the order of s                                                                                   |
 | s.sort([key, reverse]) | sorts s. if given a function as key parameter (i.e. "len"), sort applies the funtion to every member of s |
 
-### tuple - the immutable list
+#### tuple - the immutable list
 
 Operators of lists (but not methods) can be used for tuples as well.
 
