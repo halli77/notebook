@@ -320,6 +320,61 @@ print("per cent: {:%}".format(0.25))
 
 ```
 
+#### Dictionary
+
+* key/value pairs
+* like associative array in PHP or map in C++
+
+```python
+d1 = {"DE" : "Germany", "CH" : "Switzerland", "AT" : "Austria"}
+
+d2 = {
+     "DE" : "Germany", 
+     "CH" : "Switzerland", 
+     "AT" : "Austria"
+     }
+
+# dict comprehension
+d3 = { i: i*i for i in range(5) }
+print(d3) # -> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16} 
+
+for key in d1:
+    print("{} -> {}".format(key, d1[key]))
+    # DE -> Germany
+    # CH -> Switzerland
+    # AT -> Austria
+    
+```
+
+##### Operators
+
+| operator   | description                       |
+| ---------- | --------------------------------- |
+| len(d)     | number of elements in d           |
+| d[k]       | gets value of key k in d          |
+| del d[k]   | delets key/value pair with key k  |
+| k in d     | True if d contains key k          |
+| k not in d | Truef if d does not contain key k |
+
+
+##### Methods
+
+| Method                      | Description                                                        |
+| --------------------------- | ------------------------------------------------------------------ |
+| d.clear()                   | empty d                                                            |
+| d.copy()                    | returns a copy of d                                                |
+| d.get(k, [x])               | returns value of k if exists, else x                               |
+| d.items()                   | returns iterable object containing all key/value pairs             |
+| d.keys()                    | returns iterable object containing all keys                        |
+| d.pop(k)                    | returns value of k and deletes k from d                            |
+| d.popitem()                 | returns randon key/value pair and delets it from d                 |
+| d.setdefault(k, [x])        | add k/x if not exists, and allways returns value of k              |
+| d.update(d2)                | adds d2 to d and overwrites possible duplicates in d               |
+| d.values()                  | returns iterable object containg all values                        |
+| dict.fromkeys(seq, [value]) | creates new dictionary with seq als keys and as value for each key |
+
+
+
 ## Shebang
 
 * #!/usr/bin/env python3

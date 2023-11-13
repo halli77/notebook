@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 
 
-print("It's {hour}:{minute}.".format(hour=14, minute=30)) 
-# -> It's 14:30.
+d1 = {"DE" : "Germany", "CH" : "Switzerland", "AT" : "Austria"}
 
-print("It's {};{}.".format(14, 30))
-# -> It's 14:30.
+d2 = {
+     "DE" : "Germany", 
+     "CH" : "Switzerland", 
+     "AT" : "Austria"
+     }
 
-c = 10 + 5j
-print("Real part: {0.real}, imaginary part: {0.imag}".format(c))
-# -> Real part: 10.0, imaginary part: 5.0
+# dict comprehension
+d3 = { i: i*i for i in range(5) }
+print(d3) # -> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16} 
 
-print("Sum: {:.2f} EUR".format(12.3753))
-# -> Sum: 12.38 EUR
-
-print("Binary: {:b}".format(99))
-# -> Binary: 1100011
-
-print("per cent: {:%}".format(0.25))
-# -> per cent: 25.000000%
+for key in d1:
+    print("{} -> {}".format(key, d1[key]))
+    # DE -> Germany
+    # CH -> Switzerland
+    # AT -> Austria
+    
+    
+for x in d1.items():
+    print("k: {x[0]} -> v: {x[1]}".format(x))
