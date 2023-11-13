@@ -30,7 +30,7 @@ vbin = 0b1101
 ```
 **bit operations:**
 
-| operator  | operation |
+| Operator  | Operation |
 | --------- | ---------------- |
 | x & y     | AND |
 | x \| y    | OR |
@@ -122,7 +122,7 @@ print (10 // 3) # -> 3
 
 #### operators
 
-| operator           | description                                                         |
+| Operator           | Description                                                         |
 | ------------------ | ------------------------------------------------------------------- |
 | x in s             | True if x is contained in s                                         |
 | x not in s         |                                                                     |
@@ -348,7 +348,7 @@ for key in d1:
 
 #### Operators
 
-| operator   | description                       |
+| Operator   | Description                       |
 | ---------- | --------------------------------- |
 | len(d)     | number of elements in d           |
 | d[k]       | gets value of key k in d          |
@@ -384,7 +384,7 @@ for key in d1:
 
 #### Operators
 
-| operator | description                                                                   |
+| Operator | Description                                                                   |
 | -------- | ----------------------------------------------------------------------------- |
 | len(s)   | number of elements in s                                                       |
 | x in s   | True if s contains x                                                          |
