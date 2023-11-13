@@ -320,7 +320,7 @@ print("per cent: {:%}".format(0.25))
 
 ```
 
-#### Dictionary
+### Dictionary
 
 * key/value pairs
 * like associative array in PHP or map in C++
@@ -346,7 +346,7 @@ for key in d1:
     
 ```
 
-##### Operators
+#### Operators
 
 | operator   | description                       |
 | ---------- | --------------------------------- |
@@ -357,7 +357,7 @@ for key in d1:
 | k not in d | Truef if d does not contain key k |
 
 
-##### Methods
+#### Methods
 
 | Method                      | Description                                                        |
 | --------------------------- | ------------------------------------------------------------------ |
@@ -373,6 +373,45 @@ for key in d1:
 | d.values()                  | returns iterable object containg all values                        |
 | dict.fromkeys(seq, [value]) | creates new dictionary with seq als keys and as value for each key |
 
+
+### set, frozenset
+
+* every element must be unique
+* s = set()
+* s1 = { 1, 2, 3}
+* fs = frozenset()
+* fs2 = frozenset([3, 4, 5])
+
+#### Operators
+
+| operator | description                                                                   |
+| -------- | ----------------------------------------------------------------------------- |
+| len(s)   | number of elements in s                                                       |
+| x in s   | True if s contains x                                                          |
+| s <=t    | True if s is subset of t                                                      |
+| s < t    | True if s is genuine subset of t (-> there is at least one more element in t) |
+| s \| t   | returns a new set containing the elements of both sets s and t (merge)        |
+| s & t    | returns a new set with all elements containted in s as well as in in t        |
+| s - t    | returns a new set with elements from s, but not from t                        |
+| s ^ t    | returns a new set with elements from s or from t, but not in both             |
+
+
+#### Methods
+
+| Method                    | Description                                                |
+| ------------------------- | ---------------------------------------------------------- |
+| s.issubset(t)             | like s <= t                                                |
+| s.issuperset(t)           | like s >= t                                                |
+| s.isdisjoint(t)           | True if s and t have no common elements                    |
+| s.union(t)                | like s \| t                                                |
+| s.intersection(t)         | like s & t                                                 |
+| s.difference(t)           | like s - t                                                 |
+| s.symmetric_difference(t) | like s ^ t                                                 |
+| s.copy()                  | returns a copy of s                                        |
+| s.add(e)                  | add e to s                                                 |
+| s.clear()                 | deletes all elements from s                                |
+| s.discard(e)              | deletes e from s and does not throw an error if e not in s |
+| s.remove(e)               | like discard(), but throws exception of e not in s         |
 
 
 ## Shebang
