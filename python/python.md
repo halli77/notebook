@@ -255,6 +255,70 @@ print(barray) # -> bytearray(b'i am bytearray')
 | s.title()                    | first char of every word to upper case, remaining chars to lower case             |
 | s.expandtabs([tabsize])      | replaces tabs by tabsize numbers of blanks                                        | 
 
+##### Adjust Strings
+
+| Method                      | Description                                      |
+| --------------------------- | ------------------------------------------------ |
+| s.center(width, [fillchar]) | center string                                    |
+| s.ljust(width, [fillchar])  | adjust to left                                   |
+| s.rjust(widht, [fillchar])  | like s.ljust                                     |
+| s.zfill(with)               | fill "numeric" strings with zeros from left side |
+
+
+##### Test Strings
+
+| Method                             | Description                                      |
+| ---------------------------------- | ------------------------------------------------ |
+| s.isalnum()                        | True if s contains only letters or digits        |
+| s.isalpha()                        | True if s contains only letters                  |
+| s.isdigit()                        | True if s contains only digits                   |
+| s.islower()                        | True if s contains only lower case letters       |
+| s.isupper()                        | True if s contains only upper case letters       |
+| s.isspace()                        | True if all letters are blanks                   |
+| s.istitle()                        | True if all words in s begin with a upper letter |
+| s.startswith(prefix, [start, end]) | True if s begins with prefix                     |
+| s.endswith(suffix, [start, end])   | True if s ends with suffix                       |
+
+
+
+##### Connect Strings
+
+| Method      | Description                                                         |
+| ----------- | ------------------------------------------------------------------- |
+| s.join(seq) | concats all elements of seq to a new string, s is used as separator |
+
+```python
+seq = ["www", "github", "com"]
+
+print(", ".join(seq)) # -> www, github, com
+print(".".join(seq))  # -> www.github.com
+print("".join(seq))   # -> wwwgithubcom
+```
+
+
+##### Format Strings
+
+```python
+print("It's {hour}:{minute}.".format(hour=14, minute=30)) 
+# -> It's 14:30.
+
+print("It's {};{}.".format(14, 30))
+# -> It's 14:30.
+
+c = 10 + 5j
+print("Real part: {0.real}, imaginary part: {0.imag}".format(c))
+# -> Real part: 10.0, imaginary part: 5.0
+
+print("Sum: {:.2f} EUR".format(12.3753))
+# -> Sum: 12.38 EUR
+
+print("Binary: {:b}".format(99))
+# -> Binary: 1100011
+
+print("per cent: {:%}".format(0.25))
+# -> per cent: 25.000000%
+
+```
 
 ## Shebang
 
