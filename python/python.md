@@ -414,6 +414,7 @@ for key in d1:
 | s.remove(e)               | like discard(), but throws exception of e not in s         |
 
 
+
 ## Modules
 
 ### time 
@@ -474,6 +475,26 @@ print ("difference in days:", delta1.days)
 print ("difference in seconds:", delta1.seconds)
 # -> difference in seconds: 3600
 ```
+
+### enum
+
+```python
+import enum
+
+class MyWeekday(enum.Enum):
+    Monday: 1
+    Tuesday: 2
+    Wednesday: 3
+    Thursday: 4
+    Friday: 5
+    Saturday: 6
+    Sunday: 7
+```
+
+## Functions
+
+
+
 
 
 
